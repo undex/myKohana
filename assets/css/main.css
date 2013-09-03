@@ -1,0 +1,313 @@
+body{
+	font-family:'Myriad Pro', Arial, Helvetica, Tahoma;
+	font-size:75%;
+}
+
+body,div,ul,ol,li,th,h1{margin:0;padding:0}
+ol,ul{list-style:none}
+a{text-decoration:none}
+a:focus{outline:0}
+
+/*=====================
+  =	SKYSA TOOLBAR CSS =
+  =====================*/
+#SKYBar-shadow{
+	background: transparent;
+}
+
+#SKYBar #SKYBar-inner, #SKYBar-apptree .SKYBar-apptreeul{
+	background-image: none;
+}
+
+#SKYBar-appsMenuButton.bar-item{
+	background: transparent url('../img/menu.png') 0 0 no-repeat;
+}
+
+#SKYBar-appsMenuButton.bar-item:hover{
+	background: transparent url('../img/menu.png') 0 0 no-repeat;
+	background-position: 0px 2px;
+}
+
+#SKYBar-appsMenuButton{
+	background: transparent url('../img/menu.png') 0 0 no-repeat;
+}
+
+ul{
+	right: -3px;
+}
+
+li{
+	background: transparent url('../img/menu.png') 0 0 no-repeat;
+ 	background-size: 132px 35px;
+ 	right: 3px;
+}
+
+li:hover{
+	background-position: 0px 2px;
+}
+
+/*======================
+  = BAMBOO TOOLBAR CSS =
+  ======================*/
+
+ div#leftbamboo{
+ 	background: url('../img/close.png');
+ 	background-repeat: no-repeat;
+	background-position: left;
+ 	position: fixed;
+ 	width: 20px;
+ 	height: 35px;
+ 	bottom: -6px;
+ 	left: -3px;
+ 	z-index: 600;
+ }
+
+#toolbar-contents{
+	list-style-type: none;
+	position: fixed;
+	bottom: -1px;
+	z-index: 550;
+}
+
+.rightside{
+	text-decoration: none;
+	list-style-type: none;
+	margin-right:6px;
+	position:fixed;
+	right: 136px;
+	bottom:-20px;
+	bottom:-20px;
+	width: 1200%;
+ 	height: 49px;
+	float: left;
+	z-index: 1;
+}
+
+.rightside .menu li {
+	background: transparent url('../img/menu.png') 0 0 no-repeat;
+ 	background-size: 125px 36px;
+	font-family: 'Arial', sans-serif;
+	padding: 7px 0 7px 0;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 0;
+	color: #AB00FF;
+	width: 125px;
+ 	height: 35px;
+	float: right;
+}
+
+.rightside .menu li:hover{
+	background-position: 0px 2px;
+	color: #000;
+}
+
+/*====================
+  = POPUP Window CSS =
+  ====================*/
+#jobContainer:hover, #jobContainer.selected{
+	color: #000;
+}
+
+.scroll_up{
+	background-image:url(/assets/img/arrow_buttons.png);
+	background-position: 0px 0px;
+	text-indent: 999999px;
+	position: absolute;
+	overflow: hidden;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	top: 31px;
+	
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+		 -o-user-select: none;
+			user-select: none;
+}
+.scroll_down{
+    position: absolute;
+    top: 220px;
+    cursor: pointer;
+	text-indent: 999999px;
+	background-image:url(/assets/img/arrow_buttons.png);
+	overflow: hidden;
+	width: 16px;
+	height: 16px;
+	background-position: 0px 50px;
+	
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+		 -o-user-select: none;
+			user-select: none;
+}
+.button:hover{
+	cursor: pointer;
+}
+.jobWindowTitle{
+	font-weight: bold;	
+}
+.middle, .scrollbar, .prevJob{
+    float: left;
+}
+#hideJob{
+    cursor: pointer;
+	float: right;
+	margin-top: -20px;
+	margin-left: 338px;
+}
+
+/*******************		
+	JOB WINDOW		
+*******************/
+.wrapper{
+	border:20px solid transparent;
+	width:300px;
+	padding:10px 20px;
+}
+
+#jobWindow-bg{
+    border-image: url('../img/bord.png') 30 30 stretch;
+
+	margin-right:6px;
+	position: fixed;
+	padding: 6px 0;
+	display: none;
+    bottom: 38px;
+	right: 141px;
+	z-index:500;
+	bottom:0;
+
+	 -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+		-moz-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+		 -ms-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+		  -o-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+			 box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+
+}
+
+#jobWindow{
+	margin-right:6px;
+    min-width: 250px;
+    overflow: hidden;
+    position: fixed;
+	height: 235px;
+    display: none;
+	right: 160px;
+    bottom: 35px;
+    padding: 5px;
+	z-index:500;
+	bottom:0;
+
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	    -ms-border-radius: 10px;
+	     -o-border-radius: 10px;
+	   		border-radius: 10px;
+}
+.jobWindowTitle{
+	text-shadow: -1px 0px 9px rgba(255, 255, 255, 1);
+	border-bottom: 2px solid #60931f;
+	font-family: 'Arial';
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+	margin-bottom: 3px;
+	margin-left: -18px;
+	font-weight: bold;
+	padding-left: 5px;
+	margin-top: -3px;
+	font-size: 12px;
+	width: 283px;
+	color: #000;
+}
+
+#items{
+	position: relative;
+	overflow: hidden;
+	height: 215px;
+
+}
+#items ul{
+	position: absolute;
+	right: 15px;
+	top: 0px;
+}
+#items ul li{
+    border: 1px solid #458B11;
+    margin-bottom: 5px;
+	position: relative;
+    background: none;
+    font-size: 1.2em;
+    margin-top: 5px;
+    cursor: pointer;
+	overflow: auto;
+	right: 7px;
+    top: 10px;
+
+	-webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+    	-ms-border-radius: 5px;
+     	 -o-border-radius: 5px;
+   			border-radius: 5px;
+}
+
+#items ul li.job_items,{
+	padding: 5px 35px 5px 13px;
+    border: 1px solid #b861bf;
+	position: relative;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+	overflow: hidden;
+    background: none;
+    margin-top: 5px;
+    cursor: pointer;
+	width: 196px;
+
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		 -o-border-radius: 5px;
+    		border-radius: 5px;
+}
+
+#items ul li.job_items:hover{
+	border: 1px solid #458B33;
+	background-color: #658844;
+	width: 200px;
+	color: #fff;
+	right: 7px;
+    top: 10px;
+}
+
+.prevJob{
+	background-image:url(/assets/img/arrow_buttons.png);
+	background-position: 0px 30px;
+	padding: 0px 5px 0 2px;	
+	text-indent: 99999px;
+	margin-top: 120px;
+	margin-left: -3px;
+	margin-right: 3px;
+	overflow: hidden;
+	font-size: 16px;
+    cursor: pointer;
+	height: 16px;
+	width: 10px;
+}
+.jobtextcontainer{
+	overflow: hidden;
+	text-align: center;
+}
+.jobtext{
+	position: relative;
+	
+}
+
+.job_items{
+	width: 200px;
+	padding: 5px 20px 5px 20px;
+}
+.jobtext2{
+	font-weight: bold;
+}
